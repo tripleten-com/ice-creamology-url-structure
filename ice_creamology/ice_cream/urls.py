@@ -4,12 +4,12 @@ from . import views
 
 
 urlpatterns = [
-    # Главная страница
+    # Main page
     path('', views.index),
-    # Список мороженого
+    # Ice cream list
     path('ice_cream/', views.ice_cream_list),
-    # Подробная информация о мороженом. Ждем пременную типа int,
-    # и будем использовать ее под именем pk
+    # More information about ice cream. We are waiting for a variable of int type,
+    # and will use it under the name pk
     path(
         'ice_cream/<int:pk>/',
         views.ice_cream_detail
