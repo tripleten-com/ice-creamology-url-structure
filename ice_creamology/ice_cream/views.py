@@ -2,13 +2,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Главная страница')
+    return HttpResponse('Main page')
 
 
 def ice_cream_list(request):
-    return HttpResponse('Список мороженого')
+    return HttpResponse('Ice cream list')
 
 
-# В урл мы ждем парметр, и нужно его прередать в функцию для использования
+# In the url we are waiting for a parameter, and we need to pass it into a function to use
 def ice_cream_detail(request, pk):
-    return HttpResponse(f'Мороженое номер {pk}')
+    return HttpResponse(f'Ice cream No. {pk}')
